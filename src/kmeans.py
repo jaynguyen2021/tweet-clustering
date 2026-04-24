@@ -1,4 +1,4 @@
-# k-means clustering for tweet sets (using jaccard distance)
+# k-means clustering for tweets
 
 import random
 from jaccard import jaccard_distance
@@ -25,7 +25,7 @@ def assign_clusters(tweets, centroids):
 
 
 def update_centroids(clusters, tweets):
-    # update centroid by choosing a representative tweet
+    # update centroid
     new_centroids = []
 
     for cluster in clusters:

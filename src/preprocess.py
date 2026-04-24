@@ -5,11 +5,11 @@ import re
 def clean_tweet(text):
     # basic cleaning for tweets
     text = re.sub(r'http\S+', '', text)        # remove urls
-    text = re.sub(r'@\w+', '', text)           # remove mentions
-    text = re.sub(r'#(\w+)', r'\1', text)      # remove # but keep word
+    text = re.sub(r'@\w+', '', text)           # remove mentions (@user)
+    text = re.sub(r'#(\w+)', r'\1', text)      # remove "#" but keep word
     text = text.lower()
     text = re.sub(r'[^a-z0-9\s]', '', text)    # remove punctuation
-    text = re.sub(r'\s+', ' ', text).strip()   # clean extra spaces
+    text = re.sub(r'\s+', ' ', text).strip()   # remove extra spaces
 
     return text
 

@@ -1,4 +1,4 @@
-# jaccard distance between two tweets (sets of words)
+# jaccard distance for two tweets
 
 def jaccard_distance(set1, set2):
     intersection = len(set1 & set2)
