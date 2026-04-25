@@ -4,7 +4,7 @@
 
 This program reads tweets from a file, cleans them, and groups them into clusters.
 
-Each tweet is turned into a set of words, and I use Jaccard distance to measure how similar they are.
+Each tweet is turned into a set of words, and we use Jaccard distance to measure how similar they are.
 
 ---
 
@@ -37,10 +37,10 @@ It will print:
 
 Example:
 Value of K = 2  
-SSE = ...  
+SSE = 5306.4
 Size of each cluster:  
-1: ... tweets  
-2: ... tweets  
+1: 3421 tweets
+2: 2819 tweets
 
 ---
 
@@ -55,7 +55,7 @@ Just basic Python:
 ## Notes
 
 - initial centroids are random  
-- I set random.seed(123) so results don’t change every run  
+- we set random.seed(123) so results don’t change every run  
 - if a cluster is empty, it just picks a random tweet  
 
 ---
